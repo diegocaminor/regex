@@ -1,0 +1,27 @@
+expresion:
+[\?&](\w+)=([^$\n]\w+)
+
+direccion:
+http://b3co.com/?s=fotografia&mode=search&module=blog
+https://ve.search.yahoo.com/s earch?p=como+matar+a+maduro&fr=yfp-t&fp=1&toggle=1&cop=mss&ei=UTF-8
+https://www.google.co.ve/search?safe=active&ei=vVI9W5XBFKWKgAaosZNQ&q=cuando+tu+te+vas&oq=cuando+tu+te+vas&gs_l=psy-ab.3..0i203k1l10.15957.18336.0.18666.16.10.0.0.0.0.397.1210.2-2j2.4.0....0...1.1.64.psy-ab..12.4.1205...35i39k1.0.3GDpASe7jjQ
+
+resultado:
+
+http://b3co.com/
+- s => fotografia
+- mode => search
+-module => blog
+
+https://ve.search.yahoo.com/s earch
+- p => como+matar+a+maduro
+- fr => yfp-t&fp=1&toggle=1
+- cop => mss
+- ei => UTF-8
+
+https://www.google.co.ve/search
+- safe => active
+- ei => vVI9W5XBFKWKgAaosZNQ
+- q => cuando+tu+te+vas
+- oq => cuando+tu+te+vas
+- gs_l => psy-ab.3..0i203k1l10.15957.18336.0.18666.16.10.0.0.0.0.397.1210.2-2j2.4.0....0...1.1.64.psy-ab..12.4.1205...35i39k1.0.3GDpASe7jjQ
