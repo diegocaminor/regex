@@ -1,0 +1,13 @@
+Ruben,
+Juan Pablo,
+Marcela
+Rodrigo
+Belen Rivas
+Camila
+Jose Alonso
+Belen
+Ricar
+
+// selecciona 2 nombres
+REGEX: ^[a-zA-Z?]{3,}\s?[A-Z]?[a-z]{0,}
+^[A-Z][a-z]{1,}\s[A-Z]\.?\s?[A-Z]+
