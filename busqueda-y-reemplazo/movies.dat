@@ -1,6 +1,6 @@
 // La siguiente expresión regular selecciona el título y año
 // está dividida en 2 grupos y se podría reemplazar de la siguiente manera
-// {title: $1, year: $} /para obtener un json
+// {title: $1, year: $2}  // para obtener un json
 // donde $1 hace referencia al primer grupo(título) y $2 al segundo grupo(año)
 // REGEX: ^\d+::([\w\s:,ñ&-\/.'áéíóú!\(\)]+)\s\((\d\d\d\d)\)::.*$
 
