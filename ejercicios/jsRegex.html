@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Js Regex</title>
+
+  <style>
+    body {
+      font-family: Arial;
+    }
+    input {
+      font-size: 18px;
+      padding: 6px;
+    }
+    .btn {
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      padding: 6px14px;
+      font-size: 18px;
+      color: white;
+      background-color: #43c579;
+      border-bottom: 5px solid #35b46a;
+      box-shadow: 3px3px10px0rgba(65, 65, 65, 0.849);
+      margin-left: 18px;
+      transition: 300ms;
+    }
+
+    .btn:hover {
+      background-color: #3ab36c;
+      border-bottom: 5px solid #289b58;
+      transform: scale(1.1);
+    }
+    .disabled {
+      background-color: #c54343;
+      border-bottom: 5px solid #b43535;
+    }
+    .disabled:hover {
+      background-color: #b33a3a;
+      border-bottom: 5px solid #9b2828;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="email" placeholder="Your Email" onkeyup="validate(this.value)" autofocus>
+  <input type="button" id="button" value="submit" class="btn disabled" onclick="correct()" disabled>
+  
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    const button = document.getElementById('button');
+
+    function validate(email) {
+      if(email.match(/^[^@]+@[\w\.]{2,10}\.[\w]{2,5}$/i)) {
+        button.disabled = false;
+        button.classList.remove('disabled');
+      } else {
+        button.disabled = true;
+        button.classList.add('disabled');
+      }
+    }
+
+    function correct() {
+      swal({
+        title: 'Congratulations!',
+        text: 'This is a correct Email',
+        icon: 'success',
+        button: 'Thank\'s'
+      })
+    }
+  </script>
+</body>
+</html>
